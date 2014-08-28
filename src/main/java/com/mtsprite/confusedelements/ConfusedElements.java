@@ -1,6 +1,7 @@
 package com.mtsprite.confusedelements;
 
 import com.mtsprite.confusedelements.handlers.ConfigurationHandler;
+import com.mtsprite.confusedelements.init.ModBlocks;
 import com.mtsprite.confusedelements.init.ModItems;
 import com.mtsprite.confusedelements.proxy.IProxy;
 import com.mtsprite.confusedelements.refrence.Refrence;
@@ -30,6 +31,7 @@ public class ConfusedElements {
 		LogHelper.info("Pre-Initialization Complete!");
 		
 		ModItems.init();
+		ModBlocks.init();
 	}
 	
 	@Mod.EventHandler
