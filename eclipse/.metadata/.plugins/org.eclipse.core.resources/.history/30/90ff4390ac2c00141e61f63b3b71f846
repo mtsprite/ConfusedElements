@@ -1,0 +1,36 @@
+package com.mtsprite.confusedelements.handlers;
+
+import java.io.File;
+
+import net.minecraftforge.common.config.Configuration;
+
+public class ConfigurationHandler {
+	public static Configuration configuration;
+	
+	public static void init(File configFile){
+		
+		
+		//create configuration object based on the suggested configuration file
+		configuration = new Configuration(configFile);
+		boolean configValue = false;
+		
+		try{
+			//load config file
+			configuration.load();
+			
+			//read config properties
+			configValue = configuration.get(Configuration.CATEGORY_GENERAL, "configValue", true, "example config value").getBoolean(true);
+		}
+		catch(Exception e){
+			//log the exception
+		}
+		finally{
+			//save config file
+			if(configuration.hasChanged()){
+					configuration.save();
+			}
+		}
+		
+		System.out.println(configValue);
+	}
+}

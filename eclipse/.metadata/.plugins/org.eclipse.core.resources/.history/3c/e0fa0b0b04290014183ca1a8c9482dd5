@@ -1,0 +1,8 @@
+package com.mtsprite.confusedelements;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "ConfusedElements", name = "Confused Elements", version = "1.7.2-1.0")
+public class ConfusedElements {
+
+}

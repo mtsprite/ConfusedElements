@@ -1,0 +1,21 @@
+[
+{
+  "modid": "ConfusedElements",
+  "name": "Confused Elements",
+  "description": "Adds 'interesting' elements and ores.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "mtsprite"
+  ],
+  "credits": "Thanks For Using My Mod! You're Now Awesome In My Book.",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

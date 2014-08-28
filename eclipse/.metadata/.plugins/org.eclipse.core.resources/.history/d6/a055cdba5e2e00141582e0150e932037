@@ -1,0 +1,16 @@
+package com.mtsprite.confusedelements.init;
+
+import com.mtsprite.confusedelements.item.ItemCE;
+import com.mtsprite.confusedelements.item.ItemMagichalum;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModItems {
+	
+	public static final ItemCE magichalum = new ItemMagichalum();
+	
+	public static void init(){
+		
+		GameRegistry.registerItem(magichalum, "magichalum");
+	}
+}

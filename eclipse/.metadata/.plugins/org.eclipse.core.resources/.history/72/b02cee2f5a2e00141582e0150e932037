@@ -1,0 +1,8 @@
+package com.mtsprite.confusedelements.item;
+
+public class ItemMagichalum extends ItemCE{
+	
+	public ItemMagichalum(){
+			super();
+	}
+}

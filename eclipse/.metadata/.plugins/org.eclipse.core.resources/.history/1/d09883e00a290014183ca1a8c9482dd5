@@ -1,0 +1,8 @@
+package com.mtsprite.confusedelements.refrence;
+
+public class Refrence {
+	
+	public static final String MOD_ID = "ConfusedElements";
+	public static final String MOD_NAME = "Confused Elements";
+	public static final String MOD_VERSION = "1.7.2-1.0";
+}

@@ -1,0 +1,32 @@
+package com.mtsprite.confusedelements.item;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+import com.mtsprite.confusedelements.refrence.Refrence;
+
+public class ItemCE extends Item{
+	public ItemCE (){
+		
+		super();
+		
+	}
+	
+	@Override
+	public String getUnlocalizedName(){
+		
+		return String.format("item.$s$s", Refrence.MOD_ID.toLowerCase() + ":", getUnwrapedUnlocalizedName(super.getUnlocalizedName()));
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack itemStack){
+		
+		return String.format("item.%s%s", Refrence.MOD_ID.toLowerCase() + ":", getUnwrapedUnlocalizedName(super.getUnlocalizedName()));
+	}
+	
+	protected String getUnwrapedUnlocalizedName(String unlocalizedName){
+		
+		return unlocalizedName.substring(unlocalizedName.indexOf("." + 1));
+	}
+	
+}

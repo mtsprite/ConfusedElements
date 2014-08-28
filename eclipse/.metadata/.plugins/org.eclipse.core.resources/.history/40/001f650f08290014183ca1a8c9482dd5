@@ -1,0 +1,6 @@
+package com.mtsprite.confusedelements.refrence;
+
+public class Refrence {
+	
+	public static final String MOD_ID = "ConfusedElements";
+}

@@ -1,0 +1,12 @@
+package com.mtsprite.confusedelements.item;
+
+import net.minecraft.item.Item;
+
+public class ItemCE extends Item{
+	public ItemCE (){
+		
+		super();
+		
+	}
+	
+}
